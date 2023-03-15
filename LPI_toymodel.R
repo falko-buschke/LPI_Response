@@ -9,7 +9,6 @@ install_github("Zoological-Society-of-London/rlpi", dependencies=TRUE)
 library(rlpi)
 
 ###########################################################################
-
 # Set the random seed so that the stochastic process is identical to the main manuscript
 set.seed(41)
 
@@ -27,7 +26,6 @@ add.e <- rep(c(0,0.01,0.03,0.05), 4)
 lpi.means <- matrix(NA,nrow=16,ncol=length(years))
 lpi.upper <- matrix(NA,nrow=16,ncol=length(years))
 lpi.lower <- matrix(NA,nrow=16,ncol=length(years))
-
 
 # Simulate a loop for each combination of additive and multiplicative error
 for (m in 1:16){
@@ -69,7 +67,6 @@ for (m in 1:16){
   infile_N <- create_infile(as.data.frame(Pop_N), start_col_name="X1970", end_col_name="X2020", index_vector=index_vector, name="LPI_files/lpi_N")
   lpi_N <- LPIMain(infile_N, REF_YEAR = 1970, PLOT_MAX = 2019, BOOT_STRAP_SIZE = 100, VERBOSE=FALSE, plot_lpi=TRUE)
 
-
   # Record the LPI values
   lpi.means[m,] <- lpi_N$LPI_final
   lpi.upper[m,] <- lpi_N$CI_high
@@ -78,12 +75,9 @@ for (m in 1:16){
 
 ################################################################################
 ################################################################################
-
 # The following code generates the figure
-
 # Define the .png file to be saved in your working directory
 png(filename="FigureR1.png",width=32,height=16,units="cm",res=300)
-
 # Outlay panels
 par(mfrow=c(1,2))
 # Define plot pargins
