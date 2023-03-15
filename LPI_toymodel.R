@@ -131,50 +131,49 @@ mtext("a",cex=1.5, side = 3, adj = 0, line = 0.5,font=2)
 rd <- 3
 
 # Add the mean LPI values
-text(20,83,paste(round(lpi.means[1,length(years)],rd)), col="white", font=2, cex=1.3)
-text(40,83,paste(round(lpi.means[2,length(years)],rd)), col="white", font=2, cex=1.3)
-text(60,83,paste(round(lpi.means[3,length(years)],rd)), col="white", font=2, cex=1.3)
-text(80,83,paste(round(lpi.means[4,length(years)],rd)), col="white", font=2, cex=1.3)
+cex.lab <- 1.1 # Font size modifier
+text(20,83,paste(round(lpi.means[1,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(40,83,paste(round(lpi.means[2,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(60,83,paste(round(lpi.means[3,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(80,83,paste(round(lpi.means[4,length(years)],rd)), col="white", font=2, cex=cex.lab)
 
-text(20,63,paste(round(lpi.means[5,length(years)],rd)), col="white", font=2, cex=1.3)
-text(40,63,paste(round(lpi.means[6,length(years)],rd)), col="white", font=2, cex=1.3)
-text(60,63,paste(round(lpi.means[7,length(years)],rd)), col="white", font=2, cex=1.3)
-text(80,63,paste(round(lpi.means[8,length(years)],rd)), col="white", font=2, cex=1.3)
+text(20,63,paste(round(lpi.means[5,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(40,63,paste(round(lpi.means[6,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(60,63,paste(round(lpi.means[7,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(80,63,paste(round(lpi.means[8,length(years)],rd)), col="white", font=2, cex=cex.lab)
 
-text(20,43,paste(round(lpi.means[9,length(years)],rd)), col="white", font=2, cex=1.3)
-text(40,43,paste(round(lpi.means[10,length(years)],rd)), col="white", font=2, cex=1.3)
-text(60,43,paste(round(lpi.means[11,length(years)],rd)), col="white", font=2, cex=1.3)
-text(80,43,paste(round(lpi.means[12,length(years)],rd)), col="white", font=2, cex=1.3)
+text(20,43,paste(round(lpi.means[9,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(40,43,paste(round(lpi.means[10,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(60,43,paste(round(lpi.means[11,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(80,43,paste(round(lpi.means[12,length(years)],rd)), col="white", font=2, cex=cex.lab)
 
-text(20,23,paste(round(lpi.means[13,length(years)],rd)), col="white", font=2, cex=1.3)
-text(40,23,paste(round(lpi.means[14,length(years)],rd)), col="white", font=2, cex=1.3)
-text(60,23,paste(round(lpi.means[15,length(years)],rd)), col="white", font=2, cex=1.3)
-text(80,23,paste(round(lpi.means[16,length(years)],rd)), col="white", font=2, cex=1.3)
+text(20,23,paste(round(lpi.means[13,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(40,23,paste(round(lpi.means[14,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(60,23,paste(round(lpi.means[15,length(years)],rd)), col="white", font=2, cex=cex.lab)
+text(80,23,paste(round(lpi.means[16,length(years)],rd)), col="white", font=2, cex=cex.lab)
 
 # Add the percentage declines
-text(20,77,paste(round((-1+lpi.means[1,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(40,77,paste(round((-1+lpi.means[2,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(60,77,paste(round((-1+lpi.means[3,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(80,77,paste(round((-1+lpi.means[4,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
+text(20,77,paste(round((-1+lpi.means[1,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(40,77,paste(round((-1+lpi.means[2,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(60,77,paste(round((-1+lpi.means[3,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(80,77,paste(round((-1+lpi.means[4,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
 
-text(20,57,paste(round((-1+lpi.means[5,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(40,57,paste(round((-1+lpi.means[6,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(60,57,paste(round((-1+lpi.means[7,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(80,57,paste(round((-1+lpi.means[8,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
+text(20,57,paste(round((-1+lpi.means[5,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(40,57,paste(round((-1+lpi.means[6,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(60,57,paste(round((-1+lpi.means[7,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(80,57,paste(round((-1+lpi.means[8,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
 
-text(20,37,paste(round((-1+lpi.means[9,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(40,37,paste(round((-1+lpi.means[10,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(60,37,paste(round((-1+lpi.means[11,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(80,37,paste(round((-1+lpi.means[12,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
+text(20,37,paste(round((-1+lpi.means[9,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(40,37,paste(round((-1+lpi.means[10,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(60,37,paste(round((-1+lpi.means[11,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(80,37,paste(round((-1+lpi.means[12,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
 
-text(20,17,paste(round((-1+lpi.means[13,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(40,17,paste(round((-1+lpi.means[14,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(60,17,paste(round((-1+lpi.means[15,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-text(80,17,paste(round((-1+lpi.means[16,length(years)])*100,rd-2),"%"), col="white", font=1, cex=1.3)
-
+text(20,17,paste(round((-1+lpi.means[13,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(40,17,paste(round((-1+lpi.means[14,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(60,17,paste(round((-1+lpi.means[15,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
+text(80,17,paste(round((-1+lpi.means[16,length(years)])*100,rd-2),"%"), col="white", font=1, cex=cex.lab)
 
 # Set the margins for the second panel
-
 par(mai=c(0.75,0.75,0.4,0.10))
 # Plot the axes and labels
 plot(0,0,type="n",las=1,xlim=c(1970,2020),
