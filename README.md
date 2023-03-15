@@ -16,7 +16,7 @@ The code is self-contained and produces Figure 1 as presented in the aforementio
 
 1. The working directory must contain an empty folder titled `LPI_files`. This folder is used by the 'rlpi' package to store working files while calculating the Living Planet Index. 
 
-2. The code simulates 5,000 populations for 16 combinations of additve and multiplicative population strochasticity, and calculates the Living Planet Index for each of these. This whole process can take more than an hour depending on your computer becasue it has to fit 80,000 generalised additive models. If you merely want to test the code, reduce the number of species' populations being simulated (parameter `S`).
+2. The code simulates 5,000 populations for 16 combinations of additve and multiplicative population strochasticity, and calculates the Living Planet Index for each of these. This whole process can take more than an hour (possibly longer, depending on your computer specs) becasue it has to fit 80,000 generalised additive models. If you merely want to test the code, reduce the number of species' populations being simulated (parameter `S`, line 20) to 100.
 
 ## File structure
 
