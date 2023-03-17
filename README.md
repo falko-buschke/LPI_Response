@@ -10,6 +10,8 @@ The code was accurate as of 15 March 2023. For enquiries, contact `falko.buschk@
 
 The code presented here  relies on the dedicated `rlpi (v0.1.0)` package for calculating the *Living Planet Index*. This code is not on the official CRAN repository, so it must be accessed and installed directly from the [rlpi GitHub repository](https://github.com/Zoological-Society-of-London/rlpi), which also requires the `devtools (v2.4.5.)` package. The code needed to install these packages is included in the R-scripts. The code also uses the `stats (v4.1.3)` package.
 
+**Note:** This code runs without error using R version `4.1.3` but users with more recent version have reported errors with the `create_infile` function in the `rlpi` package. Please refer to [rlpi GitHub repository](https://github.com/Zoological-Society-of-London/rlpi) should you have any difficulties installin the `rlpi` package. 
+
 ## Guidance for use
 
 The code is self-contained and produces Figure 1 as presented in the aforementioned manuscript. To function, take note of the following:
