@@ -2,7 +2,8 @@
 
 This code accompanies the following manuscript:
 
-* Buschke, F.T., Hagan, J.G. Santini, L. & Coetzee, B.W.T. *The relative prevalence of additive and multiplicative stochasticity in nature is distinct from their effects on the Living Planet Index*.
+* Buschke, F.T., Hagan, J.G. Santini, L. & Coetzee, B.W.T. Reply to: The LPI is not inherently biased, but capturing stochasticity
+properly is key. *Nature Ecology & Evolution*.
 
 The code was accurate as of 15 March 2023. For enquiries, contact `falko.buschk@gmail.com`
 
